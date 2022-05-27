@@ -19,17 +19,19 @@ if (navigator.serviceWorker) {
 */
 const getQuote = async (URLAddress) => {
   try {
-    const result = await fetch(URLAddress)
-    const jsonData = await result.json()
-    console.log(jsonData)
-    const quote = jsonData.sentence
-    const character = jsonData.character.name
-    const house = jsonData.character.house.name
-    document.getElementById("game-of-thrones").innerHTML = character + ": " + quote + " " + house
+    const result = await fetch(URLAddress);
+    const jsonData = await result.json();
+    console.log(jsonData);
+    const quote = jsonData.sentence;
+    const character = jsonData.character.name;
+    const house = jsonData.character.house.name;
+    document.getElementById("game-of-thrones").innerHTML =
+      character + ": " + quote + " " + house;
   } catch (err) {
-    console.log(err)
-    document.getElementById("game-of-thrones").innerHTML = "Error fetching quotes."
+    console.log(err);
+    document.getElementById("game-of-thrones").innerHTML =
+      "Error fetching quotes.";
   }
-}
+};
 
-    getQuote("https://api.gameofthronesquotes.xyz/v1/random")
+getQuote("https://api.gameofthronesquotes.xyz/v1/random");
