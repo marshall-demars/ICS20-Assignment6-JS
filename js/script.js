@@ -10,12 +10,12 @@
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS20-Assignment6-JS", {
     scope: "/ICS20-Assignment6-JS/",
-  })
+  });
 }
 
 /**
  * This function displays an alert.
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>";
 }
