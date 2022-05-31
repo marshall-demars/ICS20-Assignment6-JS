@@ -1,4 +1,4 @@
-var GHPATH = "/ICS20-Assignment6-JS";
+var GHPATH = "/ICS20-Assignment6-JS/";
 var APP_PREFIX = "gppwa_";
 var VERSION = "version_001";
 var URLS = [
